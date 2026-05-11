@@ -59,4 +59,4 @@ This project was created to practice:
 ---
 
 ## 👩‍💻 Author
-**Palak Paryani**
+**Palak Bharat Paryani**
