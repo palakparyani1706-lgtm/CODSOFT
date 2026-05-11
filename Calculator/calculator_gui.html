@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aesthetic Calculator</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /* Aesthetic Background */
+    background: linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+
+    overflow:hidden;
+}
+
+/* Blur Circles */
+
+body::before,
+body::after{
+    content:'';
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    filter:blur(100px);
+}
+
+body::before{
+    background:#ff00cc;
+    top:-80px;
+    left:-80px;
+}
+
+body::after{
+    background:#00ffee;
+    bottom:-80px;
+    right:-80px;
+}
+
+/* Calculator Box */
+
+.calculator{
+    position:relative;
+    z-index:1;
+
+    width:340px;
+    padding:25px;
+
+    border-radius:25px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(15px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Display */
+
+.display{
+    width:100%;
+    height:80px;
+
+    border:none;
+    outline:none;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+    background: rgba(0,0,0,0.3);
+
+    color:#fff;
+
+    font-size:36px;
+    text-align:right;
+
+    padding:20px;
+}
+
+/* Buttons */
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+button{
+    height:65px;
+
+    border:none;
+    border-radius:18px;
+
+    font-size:22px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+    color:white;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    transform:translateY(-3px);
+    background: rgba(255,255,255,0.2);
+}
+
+/* Special Buttons */
+
+.operator{
+    background: linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+.equal{
+    background: linear-gradient(135deg,#00c9ff,#92fe9d);
+    color:#111;
+    grid-column:span 2;
+}
+
+.clear{
+    background: linear-gradient(135deg,#fc466b,#3f5efb);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="calculator">
+
+<input type="text" id="display" class="display" disabled>
+
+<div class="buttons">
+
+<button class="clear" onclick="clearDisplay()">C</button>
+
+<button class="operator" onclick="appendValue('/')">÷</button>
+
+<button class="operator" onclick="appendValue('*')">×</button>
+
+<button class="operator" onclick="appendValue('-')">−</button>
+
+<button onclick="appendValue('7')">7</button>
+<button onclick="appendValue('8')">8</button>
+<button onclick="appendValue('9')">9</button>
+
+<button class="operator" onclick="appendValue('+')">+</button>
+
+<button onclick="appendValue('4')">4</button>
+<button onclick="appendValue('5')">5</button>
+<button onclick="appendValue('6')">6</button>
+
+<button onclick="appendValue('.')">.</button>
+
+<button onclick="appendValue('1')">1</button>
+<button onclick="appendValue('2')">2</button>
+<button onclick="appendValue('3')">3</button>
+
+<button onclick="appendValue('0')">0</button>
+
+<button class="equal" onclick="calculate()">=</button>
+
+</div>
+</div>
+
+<script>
+
+let display = document.getElementById("display");
+
+function appendValue(value){
+    display.value += value;
+}
+
+function clearDisplay(){
+    display.value = "";
+}
+
+function calculate(){
+    try{
+        display.value = eval(display.value);
+    }
+    catch{
+        display.value = "Error";
+    }
+}
+
+</script>
+
+</body>
+</html>
