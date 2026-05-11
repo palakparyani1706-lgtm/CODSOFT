@@ -64,4 +64,4 @@ This project was created to understand:
 ---
 
 ## 👩‍💻 Author
-**Palak Paryani**
+**Palak Bharat Paryani**
