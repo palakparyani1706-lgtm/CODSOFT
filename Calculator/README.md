@@ -1,62 +1,78 @@
-# 🧮 Calculator Project (Python + HTML)
+# 🧮 Calculator Project (Python + HTML + GUI Version)
 
 ## 📌 Overview
-This is a simple **Calculator application** that performs basic arithmetic operations.  
-The project is built using **Python (backend logic)** and **HTML (frontend interface)**.
+This project is a simple yet aesthetic **Calculator application** that performs basic arithmetic operations.  
+It is built using **Python (logic backend)** and **HTML, CSS & JavaScript (frontend + GUI interface)**.
 
-It allows users to input two numbers and select an operation to get the result instantly.
+It also includes a modern **Aesthetic Glassmorphism GUI Calculator** that runs using **Live Server in VS Code**.
 
 ---
 
 ## ✨ Features
-- ➕ Addition  
-- ➖ Subtraction  
-- ✖️ Multiplication  
-- ➗ Division  
-- 📥 User input for two numbers  
-- 🧠 Simple and clean logic  
-- 🌐 Basic HTML interface  
+➕ Addition  
+➖ Subtraction  
+✖️ Multiplication  
+➗ Division  
+🧮 Real-time calculator interface  
+🎨 Aesthetic Glassmorphism UI design  
+📥 User-friendly input system  
+⚡ Instant results  
 
 ---
 
 ## 📁 Project Structure
-calculator.py → Python file containing calculation logic  
-index.html → Simple HTML interface for calculator  
+calculator.py → Python file (logic backend)  
+index.html → Simple HTML calculator  
+calculator_gui.html → Aesthetic GUI calculator (Glassmorphism UI)
 
 ---
 
 ## ⚙️ Requirements
-- Python 3.x  
-- Web browser (Chrome / Edge / Firefox)
+Python 3.x  
+Any modern web browser (Chrome / Edge / Firefox)  
+VS Code (recommended) with Live Server extension  
 
 ---
 
 ## ▶️ How to Run
 
-### 🔹 Run Python Version
+### 🔹 1. Python Version (Terminal Way)
 python calculator.py
 
-### 🔹 Run HTML Version
-Open `index.html` in any web browser
+---
+
+### 🔹 2. HTML Simple Version
+Open index.html in any browser.
+
+---
+
+### 🔹 3. GUI Aesthetic Version (Live Server Way)
+Open calculator_gui.html in VS Code  
+Right click → Open with Live Server  
+Enjoy the aesthetic calculator UI 🎨✨  
 
 ---
 
 ## 🧮 Working
-1. User enters two numbers  
-2. Selects an operation (+, -, *, /)  
-3. Program performs calculation  
-4. Result is displayed  
+User enters numbers  
+Selects operation (+, -, ×, ÷)  
+Program processes input  
+Result is displayed instantly in:
+- Terminal (Python version)  
+- Browser (HTML version)  
+- GUI interface (Aesthetic version)  
 
 ---
 
 ## 🎯 Purpose of the Project
 This project was created to understand:
 - Basic arithmetic operations in programming  
-- User input handling  
-- Logic building in Python  
-- Simple frontend structure using HTML  
+- Python logic building  
+- Frontend development using HTML, CSS & JavaScript  
+- UI/UX design using Glassmorphism style  
+- Running web projects using Live Server  
 
 ---
 
 ## 👩‍💻 Author
-**Palak Paryani**
+Palak Bharat Paryani
