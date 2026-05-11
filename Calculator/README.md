@@ -75,4 +75,4 @@ This project was created to understand:
 ---
 
 ## 👩‍💻 Author
-Palak Bharat Paryani
+**Palak Bharat Paryani**
